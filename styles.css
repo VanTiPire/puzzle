@@ -1,0 +1,38 @@
+/* styles.css */
+
+/* Set the map to cover the full viewport and be behind everything else */
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; /* Places it behind other elements */
+}
+
+/* Bottom menu styling */
+.menu-baixo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px; /* Adjust height as needed */
+    background-color: #1A1A21; /* Light background with slight transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    padding-bottom: 45px;
+    z-index: 1; /* Ensure it appears above the map */
+    border-radius: 50.72px 50.72px 0px 0px;
+}
+
+#camara {
+    position: relative;
+    top: -5px; /* Move it up by 5px, adjust as needed */
+}
+
+
+.rotated-icon {
+    transform: rotate(var(--rotation-angle)); /* Apply rotation using the CSS variable */
+}
